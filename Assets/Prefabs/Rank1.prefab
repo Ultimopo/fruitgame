@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9222064808481201684}
   - component: {fileID: 3528178159113880732}
   - component: {fileID: -902769381721155279}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rank1
   m_TagString: 1
   m_Icon: {fileID: 0}
@@ -52,6 +52,8 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -95,6 +97,7 @@ CircleCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2738149852358944145}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -118,9 +121,9 @@ CircleCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
   m_Radius: 0.5
 --- !u!50 &3528178159113880732
 Rigidbody2D:
@@ -162,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruitRank: 1
+  count: 0
   fruits:
   - {fileID: 3863250603987247129, guid: 0279e09f0b33a5b43b0b1298a53dffac, type: 3}
   - {fileID: 2738149852358944145}
@@ -170,4 +174,20 @@ MonoBehaviour:
   - {fileID: 6535863132701732727, guid: 2a112808a4a4e83449c9c7be726fd507, type: 3}
   - {fileID: 4392309474588058751, guid: ac2b50984017d984e87b2b5bc1d99a28, type: 3}
   - {fileID: 6772992429585394475, guid: 8c88a4c55b260fd4b9534bd1fa587e88, type: 3}
+  - {fileID: 6772992429585394475, guid: 5a98d9ae60a7fe045b9f069df2ef7094, type: 3}
   fruitMerge: {fileID: 0}
+  onMerge:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 8bb434379ba2d2d469218d175c6fb66f, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
